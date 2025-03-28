@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function List() {
-  let food = ['상품 1 40,000원', '상품 2 36,000원'];
+  const food = ['상품 1 40,000원', '상품 2 36,000원'];
 
   return (
     <>
