@@ -12,9 +12,11 @@ export default function List() {
       <div className="food">
         <h4>{food[1]}</h4>
       </div>
-      <Link className="Link" href="/">
-        Home
-      </Link>
+      <div className="div">
+        <Link className="link" href="/">
+          Home
+        </Link>
+      </div>
     </>
   );
 }
