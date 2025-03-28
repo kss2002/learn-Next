@@ -17,6 +17,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // tsx 변환
   return (
     <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
