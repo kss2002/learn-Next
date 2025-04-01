@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import { API_URL } from '../constants';
 
 // server side data fetch
-export const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies';
 
 async function getMovies() {
   const response = await fetch(API_URL);
