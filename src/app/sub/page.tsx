@@ -1,7 +1,7 @@
 import styles from '../sub/sub.module.css';
 import Link from 'next/link';
 
-export default function Home() {
+export default function SubHome() {
   const name = 'Vercel';
   const link = 'https://nextjs.org/';
   // typescript에서는 type를 명시적으로 선언한다.
