@@ -5,7 +5,12 @@ export const metadata = {
   title: 'Home',
 };
 
-async function getMovies() {
+interface Movie__type {
+  id: string;
+  title: string;
+}
+
+async function getMovies(): Promise<Movie__type[]> {
   const response = await fetch(API_URL);
   const json = await response.json();
   return json;
