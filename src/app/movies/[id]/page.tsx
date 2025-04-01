@@ -6,7 +6,8 @@ interface IParams {
   params: { id: string };
 }
 
-export async function generateMetadata({ params: { id } }: IParams) {
+export async function generateMetadata({ params }: IParams) {
+  const { id } = await params; // `params`를 비동기적으로 await 처리
   const movie = await getMovie(id);
   return {
     title: movie.title,
@@ -14,7 +15,7 @@ export async function generateMetadata({ params: { id } }: IParams) {
 }
 
 export default async function MovieDetail({ params }: IParams) {
-  const { id } = params;
+  const { id } = await params; // `params`를 비동기적으로 await 처리
   return (
     <div>
       <Suspense fallback={<h1>info 로딩 중..</h1>}>
