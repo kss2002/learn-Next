@@ -1,5 +1,6 @@
 'use client';
 
+import styles from '../styles/navigation.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -9,18 +10,18 @@ export default function Navigation() {
   const path = usePathname();
   const [count, setCount] = useState(0);
   return (
-    <nav className="nav">
+    <nav className={styles.nav}>
       <ul>
-        <li className="li">
+        <li className={styles.li}>
           <Link href="/">Home</Link> {path === '/' ? '❤️' : ''}
         </li>
-        <li className="li">
+        <li className={styles.li}>
           <Link href="/list">List</Link> {path === '/list' ? '🔥' : ''}
         </li>
         <li>
           <button onClick={() => setCount((c) => c + 1)}>{count}</button>
         </li>
-        <li className="li">
+        <li className={styles.li}>
           <Link href="/list/about-us">about-us</Link>{' '}
           {path === '/list/about-us' ? '😊' : ''}
         </li>

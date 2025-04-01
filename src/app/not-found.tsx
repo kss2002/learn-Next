@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 // app 하위 파일에 not-found로 파일을 명하면,
 // 자동으로 404 not found 페이지를 보여줌
 export default function NotFound() {

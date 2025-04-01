@@ -1,0 +1,16 @@
+.nav {
+  position: fixed;
+  top: 0;
+
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+}
+
+.li {
+  &:hover {
+    color: rgb(0, 157, 255);
+  }
+}

@@ -1,3 +1,4 @@
+import styles from '../page.module.css';
 import Link from 'next/link';
 
 export default function List() {
@@ -10,16 +11,16 @@ export default function List() {
 
   return (
     <>
-      <h1 className="hello">상품 목록</h1>
+      <h1 className={styles.hello}>상품 목록</h1>
       {food.map((food) => {
         return (
-          <div className="food" key={food.id}>
+          <div className={styles.food} key={food.id}>
             <h4>{food.name}</h4>
           </div>
         );
       })}
-      <div className="div">
-        <Link className="link" href="/">
+      <div className={styles.div}>
+        <Link className={styles.link} href="/">
           Home
         </Link>
       </div>
