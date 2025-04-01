@@ -1,7 +1,8 @@
-import { Geist, Geist_Mono } from 'next/font/google';
-import Navigation from '../../components/navigation';
 import './globals.css';
-import Footer from '../../components/footer';
+import { Geist, Geist_Mono } from 'next/font/google';
+//import Navigation from '../../components/navigation';
+//import Footer from '../../components/footer';
+// 네비게이션이랑 푸터 잠시 주석 처리 2025/4/1
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -23,9 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navigation />
+        {/*         <Navigation />  */}
         {children}
-        <Footer />
+        {/*         <Footer /> */}
       </body>
     </html>
   );

@@ -1,9 +1,5 @@
-import styles from '../app/page.module.css';
+import styles from '../sub/sub.module.css';
 import Link from 'next/link';
-
-export const metadata = {
-  title: 'Home',
-};
 
 export default function Home() {
   const name = 'Vercel';

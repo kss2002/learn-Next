@@ -1,0 +1,67 @@
+.div {
+  width: 50vw;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.hello {
+  margin-top: 180px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.link {
+  margin: 20px;
+  font-size: 24px;
+
+  transition: 0.3s;
+  &:hover {
+    color: rgb(0, 157, 255);
+  }
+}
+
+.background {
+  margin: 0 auto;
+  background-color: rgb(0, 157, 255);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 160px;
+  height: 600px;
+  width: 90vw;
+  border-radius: 20px;
+}
+
+.sub {
+  color: black;
+
+  transition: 0.3s;
+  &:hover {
+    color: white;
+  }
+}
+
+.food {
+  margin: 20px auto;
+  width: 200px;
+  background-color: darkgray;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* 
+// 내 예상엔 app에 없는 컴포넌트만 따로 styles 폴더를 만들어서
+// 경로를 지정하는 것만 가능한 듯.
+// app 안에 있는 건 그 안에 따로 모듈.css 를 만들어서
+// 경로를 할당하는 듯?
+*/
