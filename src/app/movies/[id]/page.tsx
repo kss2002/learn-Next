@@ -13,7 +13,9 @@ export async function generateMetadata({ params: { id } }: Iparams) {
   };
 }
 
-export default async function MovieDetail({ params: { id } }: Iparams) {
+export default async function MovieDetail(props: Promise<Iparams>) {
+  const { params } = await props;
+  const { id } = params;
   return (
     <div>
       <Suspense fallback={<h1>info 로딩 중..</h1>}>

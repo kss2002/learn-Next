@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { API_URL } from '../constants';
 
-// server side data fetch
+export const metadata = {
+  title: 'Home',
+};
 
 async function getMovies() {
   const response = await fetch(API_URL);
@@ -9,7 +11,6 @@ async function getMovies() {
   return json;
 }
 
-// typescript에서는 type를 명시적으로 선언한다.
 export default async function Home() {
   const movies = await getMovies();
   return (
@@ -25,4 +26,6 @@ export default async function Home() {
   );
 }
 
+// server side data fetch
 // async 비동기 처리에는 await가 필요해진다.
+// typescript에서는 type를 명시적으로 선언한다.
