@@ -1,4 +1,10 @@
-export default function LayoutList({ children }) {
+import { ReactNode } from 'react';
+
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function LayoutList({ children }: LayoutProps) {
   return (
     <>
       <div>
