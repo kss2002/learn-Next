@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer>
         <div className={styles.footer}>
-          <h3 className={styles.footer__title}>여기는 footer</h3>
+          <h2 className={styles.footer__title}>여기는 footer</h2>
         </div>
       </footer>
     </>
